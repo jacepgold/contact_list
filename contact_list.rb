@@ -11,7 +11,7 @@ def viewContacts(contacts) # run this function to view the contacts int he array
     count = 0
     # While count is less than the length of the elements in the contacts array
     # keep looping this while loop
-    
+
     while count < contacts.length
         puts contacts[count] # Display the current element in position (count) of the contacts array
         count += 1 # Add one to the count
@@ -41,7 +41,7 @@ def startContact(contacts) # Home menu
         viewContacts(contacts) # If the user enters 1, call the function to view the contacts in the array
         startContact(contacts)
     elsif choice == '2'
-        newContact = createContact # If the user enters 2, call the function to add a contact. 
+        newContact = createContact # If the user enters 2, call the function to add a contact.
         # Save value as newContact as a string
         contacts.push(newContact) # Put the new contact at the end of the contact array
         startContact(contacts)
@@ -50,7 +50,7 @@ def startContact(contacts) # Home menu
         puts "Goodbye!"
     else
         puts "Bad User Input, Please Try Again.\n" # If the user enters anything other than or 2, kill the program.
-    end   
+    end
 end
 
 
